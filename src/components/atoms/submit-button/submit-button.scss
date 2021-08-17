@@ -1,0 +1,22 @@
+.add-link {
+  width: max-content;
+  display: flex;
+  padding: 12px 20px;
+  border: 1px solid #fbe2c4;
+  border-radius: 6px;
+  margin-left: auto;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all .3s;
+  &:hover{
+    background-color: #fbe2c3;
+  }
+  &__button{
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+  }
+  img {
+    width: 15px;
+    margin-right: 20px;
+  }
+}
