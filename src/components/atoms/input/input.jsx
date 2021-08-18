@@ -4,7 +4,7 @@ import './input.scss'
 const Input = ({title, ...inputProps}) => {
   return (
     <div className="input">
-      <p className="input-title">{title}:</p>
+      <p data-testid="input-title" className="input-title">{title}:</p>
       <input {...inputProps} />
     </div>
   );
