@@ -1,4 +1,4 @@
-# Hepsi burada case
+# React vote app
 
 ## Build Setup
 
