@@ -1,4 +1,0 @@
-Daha önce çalıştığım firmalar Unit Test yazmaya gerek duymadıkları için maalesef bu konu hakkında pek bir tecrübem olmadı.. 
-İnternetten araştıra araştıra, ufak testler yazmaya çalıştım. 
-
-Şu an hali hazırda çalıştığım için de ne yazık ki araştırmaya çok fazla zamanım olmadı. Ancak zevkli bir konu, ne zamandır da öğrenmek istiyordum. Bu case ile öğrenmeye başlamış oldum, bundan sonra ki boş zamanlarımı unit test için araştırmalar yapmak için harcıyor olacağım :)
