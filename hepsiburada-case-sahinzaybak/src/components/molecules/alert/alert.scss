@@ -1,0 +1,28 @@
+.alert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .4s;
+  opacity: 0;
+  pointer-events: none;
+  &-inner {
+    position: absolute;
+    background-color: #e1f9c0;
+    border: 1px solid #71bd41;
+    top: 0;
+    padding: 14px 23px;
+    border-radius: 6px;
+    color: #128827;
+    font-size: 17px;
+    box-shadow: #72bd414d 1px 11px 20px 3px;
+    &__text{
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+  &.active{
+    opacity: 1;
+    pointer-events: all;
+    
+  }
+}

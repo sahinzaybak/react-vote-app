@@ -1,0 +1,8 @@
+.error{
+	display: none;
+	font-size: 14px;
+	color:red;
+	&.active{
+	  display: block;
+	}
+  }

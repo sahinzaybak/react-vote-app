@@ -1,0 +1,61 @@
+@import "../../../assets/scss/variables.scss";
+.modal {
+  &-shadow{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #272727de;
+    left: 0;
+    z-index: 9;
+  }
+  &-container{
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
+  &-wrp {
+    position: fixed;
+    background-color: #fef1e4;
+    width: 500px;
+    right: 0;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    padding: 26px;
+    border-radius: 6px;
+    z-index: 99;
+    @media (max-width: $mobile) {
+      width: 90%;
+    }
+  }
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #3e3e3e14;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    &__icon {
+      width: 16px;
+    }
+  }
+  &-inner {
+    text-align: center;
+    &__desc {
+      padding: 20px 0;
+      &-link{
+        font-size: 32px;
+        font-weight: 600;
+        padding: 15px 0 0;
+      }
+    }
+    &__action{
+      .button{
+        margin: 0px 10px;
+      }
+    }
+  }
+}
