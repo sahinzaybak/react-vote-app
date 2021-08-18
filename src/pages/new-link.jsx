@@ -23,10 +23,10 @@ const NewLink = () => {
   selectedLinkName = useSelector(state => state.alert.selectedLinkName)
 
   async function addLink() {
-    if (linkName == "" || linkURL == "") { setIsError(true); setErrorMessage("Lütfen tüm alanları doldurun.") }
+    if (linkName == "" || linkURL == "") { setIsError(true); setErrorMessage("Please fill in all fields.")}
     else {
       let isLinkControl = voteList.some(x => x.linkURL == linkURL)
-      if (isLinkControl) { setIsError(true); setErrorMessage("Bu link adında zaten bir site mevcut..") }
+      if (isLinkControl) { setIsError(true); setErrorMessage("There is already a site called this link.")}
       else {
         await dispatch(addVote(linkName, linkURL, 0))
         await dispatch({ type: "ALERT_STATUS", payload: { status: true, selectedLinkName: linkName } })
